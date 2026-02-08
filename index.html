@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sterling Capital - Strategic Wealth Management</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        fin: {
+                            dark: '#050505', // Ultra Dark
+                            card: '#121212', // Slightly lighter for cards
+                            green: '#00D084', // Bull Market Green
+                            greenDark: '#065F46', // Deep Green
+                            gray: '#A1A1AA',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Manrope', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    backgroundImage: {
+                        'grid-pattern': "linear-gradient(to right, #1f2937 1px, transparent 1px), linear-gradient(to bottom, #1f2937 1px, transparent 1px)",
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .text-glow { text-shadow: 0 0 20px rgba(0, 208, 132, 0.3); }
+        .bg-grid {
+            background-size: 40px 40px;
+            mask-image: linear-gradient(to bottom, transparent, 5%, black, 95%, transparent);
+        }
+    </style>
+</head>
+<body class="bg-fin-dark text-white font-sans antialiased overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 bg-fin-dark/90 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-fin-green rounded-sm flex items-center justify-center text-fin-dark font-bold text-xl">S</div>
+                <span class="text-xl font-bold tracking-tight text-white">STERLING<span class="text-fin-green">.</span></span>
+            </div>
+            <div class="hidden md:flex gap-8 text-sm font-medium text-gray-400">
+                <a href="#background" class="hover:text-fin-green transition">Expertise</a>
+                <a href="#speaking" class="hover:text-fin-green transition">Impact</a>
+                <a href="#consult" class="hover:text-fin-green transition">Consulting</a>
+            </div>
+
+        </div>
+    </nav>
+
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1544531586-fde5298cdd40?q=80&w=1600&auto=format&fit=crop" alt="Financial coach giving a speech to a large crowd" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-fin-dark via-fin-dark/40 to-fin-dark/10"></div>
+        </div>s
+
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center relative z-10">
+            <div>
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-fin-green/30 bg-fin-dark/80 text-fin-green text-xs font-bold tracking-widest uppercase mb-6 backdrop-blur-md">
+                    <span class="w-2 h-2 rounded-full bg-fin-green animate-pulse"></span>
+                    Wealth Management & Education
+                </div>
+                <h1 class="text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                    Master the Markets. <br>
+                    <span class="text-fin-green text-glow">Build Generational Wealth.</span>
+                </h1>
+                <p class="text-lg text-gray-300 mb-8 max-w-lg leading-relaxed font-medium">
+                    Join thousands of investors who have transitioned from gambling to strategic asset allocation. Guided by Wall Street experience, simplified for your success.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#consult" class="px-8 py-4 bg-fin-green text-fin-dark font-bold rounded text-center hover:bg-white transition shadow-[0_0_20px_rgba(0,208,132,0.4)]">
+                        Book a Strategy Session
+                    </a>
+                    <a href="#speaking" class="px-8 py-4 border border-white/20 bg-fin-dark/50 backdrop-blur-sm text-white font-bold rounded text-center hover:border-white transition flex items-center justify-center gap-2 group">
+                        See Student Results <span class="group-hover:translate-x-1 transition">→</span>
+                    </a>
+                </div>
+            </div>
+            <div></div>
+        </div>
+    </section>
+
+    <div class="border-y border-white/5 bg-fin-card/50 py-8">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p class="text-xs text-fin-green mb-6 uppercase tracking-widest font-bold opacity-80">As Seen On</p>
+            <div class="flex flex-wrap justify-center gap-12 opacity-40 grayscale">
+                <span class="text-xl font-serif font-bold text-white">Bloomberg</span>
+                <span class="text-xl font-serif font-bold text-white">CNBC</span>
+                <span class="text-xl font-serif font-bold text-white">TEDx</span>
+                <span class="text-xl font-serif font-bold text-white">The Economist</span>
+            </div>
+        </div>
+    </div>
+
+    <section id="philosophy" class="py-24 bg-fin-dark relative">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">The Market is Volatile. <br><span class="text-fin-green">Your Plan Shouldn't Be.</span></h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Most investors fail due to emotional decisions. We provide the institutional framework to keep you on track.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 bg-fin-card rounded-lg border border-white/5">
+                    <h3 class="text-xl font-bold text-white mb-3 text-fin-green">Inflation Risk</h3>
+                    <p class="text-gray-500 text-sm">Cash is a losing asset. We help you outpace inflation.</p>
+                </div>
+                <div class="p-8 bg-fin-card rounded-lg border border-white/5">
+                    <h3 class="text-xl font-bold text-white mb-3 text-fin-green">Tax Inefficiency</h3>
+                    <p class="text-gray-500 text-sm">Maximize your after-tax returns with smart allocation.</p>
+                </div>
+                <div class="p-8 bg-fin-card rounded-lg border border-white/5">
+                    <h3 class="text-xl font-bold text-white mb-3 text-fin-green">Emotional Trading</h3>
+                    <p class="text-gray-500 text-sm">We replace guesswork with data-driven strategy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="background" class="py-24 bg-fin-card border-y border-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <div class="absolute -top-4 -left-4 w-24 h-24 border-t-2 border-l-2 border-fin-green opacity-50"></div>
+                    <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1000&auto=format&fit=crop" alt="James working with clients" class="rounded-lg shadow-2xl transition duration-500">
+                    <div class="absolute -bottom-6 -right-6 bg-fin-dark border border-fin-green/30 p-6 rounded shadow-xl">
+                        <p class="text-fin-green text-3xl font-bold font-serif">15+</p>
+                        <p class="text-xs text-gray-400 uppercase tracking-widest">Years on Wall St.</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <span class="text-fin-green font-bold tracking-widest uppercase text-sm mb-2 block">The Architect Behind the Strategy</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Not Just a Coach.<br>A Wall Street Veteran.</h2>
+                    <p class="text-gray-400 text-lg mb-6 leading-relaxed">
+                        James Sterling didn't just read about the markets—he shaped them. Before founding Sterling Capital, James managed a <strong>$500M hedge fund portfolio</strong> in New York, specializing in risk-adjusted returns for institutional clients.
+                    </p>
+                    <p class="text-gray-400 text-lg mb-8 leading-relaxed">
+                        Now, he translates those complex, high-level strategies into actionable blueprints for individual investors who demand more than average market returns.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-fin-green/10 flex items-center justify-center text-fin-green">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white">CFA® Charterholder</h4>
+                                <p class="text-xs text-gray-500">Highest Investment Standard</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-fin-green/10 flex items-center justify-center text-fin-green">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white">MBA Finance</h4>
+                                <p class="text-xs text-gray-500">Wharton School</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-fin-green/10 flex items-center justify-center text-fin-green">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white">Top 1% Returns</h4>
+                                <p class="text-xs text-gray-500">Consistent Alpha</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 relative overflow-hidden bg-gradient-to-b from-fin-dark to-black">
+        <div class="max-w-6xl mx-auto px-6 relative z-10">
+            <div class="bg-[#0A0A0A] border border-fin-green/20 rounded-2xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-12 shadow-[0_0_50px_rgba(0,208,132,0.05)]">
+                <div class="w-full md:w-1/3 flex justify-center">
+                    <div class="w-56 h-72 relative rounded border border-fin-green/30 shadow-2xl overflow-hidden flex flex-col items-center justify-center text-center p-6 z-0 group hover:-translate-y-2 transition-all">
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1642543492481-44e81e3914a7?q=80&w=1000&auto=format&fit=crop')] bg-cover bg-center opacity-20 z-[-1] mix-blend-luminosity"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-fin-dark via-fin-dark/80 to-fin-green/20 z-[-1]"></div>
+                        <svg class="w-10 h-10 text-fin-green mb-4 drop-shadow-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                        <span class="text-fin-green text-xs font-bold tracking-widest uppercase mb-2 relative z-10">Market Outlook</span>
+                        <h3 class="font-serif text-2xl text-white italic relative z-10 text-glow">2026<br>US Equity<br>Blueprint</h3>
+                    </div>
+                </div>
+                <div class="w-full md:w-2/3 text-center md:text-left">
+                    <h2 class="text-3xl font-bold text-white mb-4">Access The 7-Figure Blueprint</h2>
+                    <p class="text-gray-400 mb-8 text-lg">Download our exclusive guide on asset allocation and tax minimization strategies for US markets in 2026.</p>
+                    <button class="px-8 py-4 bg-fin-green text-fin-dark font-bold rounded hover:bg-white transition w-full md:w-auto shadow-lg shadow-fin-green/20">
+                        <a href="./pdf/Access The 7-Figure Blueprint.pdf" download="newfilename">Download pdf</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="speaking" class="py-24 bg-fin-dark relative">
+        <div class="absolute top-1/2 left-0 w-[400px] h-[400px] bg-fin-green/5 blur-[100px] rounded-full pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-20">
+                <p class="text-fin-green text-xs font-bold tracking-widest uppercase mb-2">Global Impact</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-white">Empowering the Next Generation <br>of <span class="text-fin-green">Intelligent Investors</span></h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-4 mb-16">
+                <div class="relative overflow-hidden rounded-lg group h-64 md:h-auto">
+                    <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=800&auto=format&fit=crop" alt="Large Seminar" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
+                        <span class="text-white font-bold">New York Fintech Summit</span>
+                    </div>
+                </div>
+                <div class="grid grid-rows-2 gap-4">
+                    <div class="relative overflow-hidden rounded-lg group h-48">
+                        <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?q=80&w=800&auto=format&fit=crop" alt="Workshop" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-4">
+                            <span class="text-white text-sm font-bold">Private Mastermind Group</span>
+                        </div>
+                    </div>
+                    <div class="relative overflow-hidden rounded-lg group h-48">
+                        <img src="https://images.unsplash.com/photo-1558403194-611308249627?q=80&w=800&auto=format&fit=crop" alt="Mentoring" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-4">
+                            <span class="text-white text-sm font-bold">1-on-1 Strategic Planning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-fin-card border border-white/5 p-8 rounded-lg text-center hover:border-fin-green/30 transition group">
+                    <div class="text-4xl font-serif text-fin-green mb-2 italic">5,000+</div>
+                    <p class="text-gray-400 text-sm uppercase tracking-wide mb-6">Students Mentored</p>
+                    <p class="text-gray-500 text-sm mb-6">"James changed my life. I went from debt to a 6-figure portfolio in 3 years."</p>
+                    <div class="flex items-center justify-center gap-3">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=100&auto=format&fit=crop" alt="Sarah Jenkins" class="w-10 h-10 rounded-full border border-fin-green/30 object-cover">
+                        <span class="text-xs text-white font-bold">Sarah Jenkins, CEO</span>
+                    </div>
+                </div>
+                <div class="bg-fin-card border border-white/5 p-8 rounded-lg text-center hover:border-fin-green/30 transition group">
+                    <div class="text-4xl font-serif text-fin-green mb-2 italic">$50M+</div>
+                    <p class="text-gray-400 text-sm uppercase tracking-wide mb-6">Wealth Generated</p>
+                    <p class="text-gray-500 text-sm mb-6">"The tax strategies alone saved me over $40k last year. This program pays for itself."</p>
+                    <div class="flex items-center justify-center gap-3">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=100&auto=format&fit=crop" alt="David Chen" class="w-10 h-10 rounded-full border border-fin-green/30 object-cover">
+                        <span class="text-xs text-white font-bold">David Chen, Tech Founder</span>
+                    </div>
+                </div>
+                <div class="bg-fin-card border border-white/5 p-8 rounded-lg text-center hover:border-fin-green/30 transition group">
+                    <div class="text-4xl font-serif text-fin-green mb-2 italic">300+</div>
+                    <p class="text-gray-400 text-sm uppercase tracking-wide mb-6">Keynote Speeches</p>
+                    <p class="text-gray-500 text-sm mb-6">"I've attended dozens of finance seminars. James is the only one who speaks the truth."</p>
+                    <div class="flex items-center justify-center gap-3">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=100&auto=format&fit=crop" alt="Michael Ross" class="w-10 h-10 rounded-full border border-fin-green/30 object-cover">
+                        <span class="text-xs text-white font-bold">Michael Ross, Doctor</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-fin-card border-t border-white/5">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="w-full md:w-1/3">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-fin-green rounded opacity-10 transform translate-x-3 translate-y-3"></div>
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop" alt="James Sterling, Financial Advisor" class="relative rounded border border-white/10 w-full object-cover shadow-2xl transition duration-500">
+                    </div>
+                </div>
+                <div class="w-full md:w-2/3">
+                    <h2 class="text-3xl font-bold text-white mb-2">A Personal Note from James</h2>
+                    <p class="text-fin-green font-medium mb-6 uppercase tracking-wide text-sm">Founder & Senior Advisor</p>
+                    <p class="text-gray-400 text-lg mb-6 leading-relaxed">
+                        "I founded Sterling Capital with a single mission: to democratize institutional-grade wealth management. Whether I'm speaking to a crowd of 500 or consulting 1-on-1, my goal is to give you the clarity and confidence to build your legacy."
+                    </p>
+                    <svg class="h-16 text-fin-green opacity-60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 30C10 30 20 10 40 10C60 10 50 50 30 50C10 50 40 10 60 10C80 10 70 50 90 50C110 50 100 20 120 20C140 20 130 50 150 50C170 50 190 30 190 30" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="consult" class="py-32 bg-fin-dark relative overflow-hidden text-center">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-fin-green/10 via-fin-dark to-fin-dark"></div>
+        <div class="max-w-3xl mx-auto px-6 relative z-10">
+            <h2 class="text-4xl lg:text-5xl font-bold text-white mb-8">Secure Your Financial Future Today.</h2>
+            <p class="text-xl text-gray-400 mb-10">We are currently accepting 3 new private clients this month.</p>
+            <button class="px-10 py-5 bg-fin-green text-fin-dark font-bold text-lg rounded hover:bg-white transition transform hover:-translate-y-1 shadow-[0_0_30px_rgba(0,208,132,0.3)]">
+                <a href="https://calendly.com/prince811009fy/joanne" target="_blank">Schedule Your Call</a>
+            </button>
+            <p class="mt-8 text-xs text-gray-600">Fiduciary services provided by Sterling Capital LLC.</p>
+        </div>
+    </section>
+
+    <footer class="bg-black py-12 border-t border-white/10 text-gray-500 text-sm">
+        <div class="max-w-7xl mx-auto px-6 text-center md:text-left">
+            <p>&copy; 2025 Sterling Capital LLC. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
